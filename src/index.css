@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+@layer utilities {
+  .font-serif-book {
+    font-family: 'Merriweather', 'Georgia', 'Cambria', serif;
+  }
+  .font-sans-ui {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+}
+
+/* Rendu typographique soigné pour le livre */
+body {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Styles d'impression pour l'export PDF du livre */
+@media print {
+  .no-print {
+    display: none !important;
+  }
+  body {
+    background: #ffffff !important;
+    color: #000000 !important;
+  }
+  article {
+    max-width: 100% !important;
+    padding: 0 !important;
+  }
+  pre, code {
+    white-space: pre-wrap !important;
+    word-break: break-all;
+  }
+  h1, h2, h3 {
+    page-break-after: avoid;
+  }
+}

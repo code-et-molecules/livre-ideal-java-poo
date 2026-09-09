@@ -1,0 +1,6 @@
+{
+  "name": "Livre idéal - Java POO",
+  "description": "Ebook complet de référence en programmation orientée objet en Java pour le 2e cours de Techniques de l'informatique au collégial québécois avec théorie, exercices et corrigés.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
